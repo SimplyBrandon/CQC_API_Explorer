@@ -28,9 +28,9 @@ Set up is standard with any laravel project. Prepare an environment, move the so
 
 #### Query the CQC API for a paginated format of all providers.
 
-```http
+`http
   GET /api/providers
-```
+`
 
 | Parameter | Type     | Description                | Example |
 | :-------- | :------- | :------------------------- |:-----------
@@ -39,15 +39,15 @@ Set up is standard with any laravel project. Prepare an environment, move the so
 #### Get existing providers UUID and when they were last updated
 This is used to provide functionality to the web panel, in showing outdated and updated providers.
 
-```http
+`http
   GET /api/providers/existing
-```
+`
 
 #### Get Provider
 
-```http
+`http
   GET /api/providers/${uuid}
-```
+`
 
 | Parameter | Type     | Description                               | Example |
 | :-------- | :------- | :---------------------------------------- |:------- |
@@ -55,9 +55,9 @@ This is used to provide functionality to the web panel, in showing outdated and 
 
 #### Search Providers
 
-```http
+`http
   GET /api/providers/search/${query}
-```
+`
 
 | Parameter | Type     | Description                               |
 | :-------- | :------- | :---------------------------------------- |
