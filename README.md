@@ -7,13 +7,16 @@ The web panel allows you to search locally available providers and explore the A
 
 The API endpoints provide a proxy of the CQC API, with the addition of hooking into the individual providers that are fetched and storing or updating them (if they're stored, but older than 1 week) locally.
 
+_Included with this is a test, accessible via `php artisan test` called `RetrieveAndStoreProviderTest`, this tests that the functionality of individual providers is working as expected, by deleting a known provider and fetching it again._
+
 
 ## Installation
 
-Set up is standard with any laravel project. Prepare an environment, move the source folder to that environment then...
+Set up is standard with any laravel project. Prepare an environment, move the source folder to that environment, configure the .env, then...
 
 ```bash
   composer install
+  php artisan migrate
   php artisan serve (if necessary)
 ```
     
